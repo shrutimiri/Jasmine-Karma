@@ -1,0 +1,17 @@
+<!-- <app-student></app-student> -->
+
+<!-- <app-admin></app-admin> -->
+
+<!-- <app-user></app-user> -->
+
+<p>@Input and @Output Directive</p>
+
+<div style="text-align: center;">
+    <h2>I am parent HTML</h2>
+</div>
+
+<div>
+    <app-student [myinputMsg]="myInputMessage" (myOutput)="GetChildData($event)"></app-student>
+</div>
+
+<h4 style="color: red;">{{outputDecorator}}</h4>
